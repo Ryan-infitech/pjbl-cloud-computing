@@ -1,0 +1,9 @@
+from google.colab import drive
+drive.mount('/content/drive')
+
+# Menyimpan ke Google Drive (Persistent Storage)
+path = "/content/drive/MyDrive/data_aman_cloud.txt"
+with open(path, "w") as f:
+    f.write("Data ini aman karena disimpan di Cloud Storage!")
+
+print(f"File berhasil diamankan di: {path}")
